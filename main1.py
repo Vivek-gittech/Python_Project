@@ -4,18 +4,18 @@ Library_Dict={
     "Author":"Abc",
     "Member":"3"
 }
-# with open("E:\Python\Library_system.txt","a")as f:
+# with open("Library_system.txt","a")as f:
 #         f.write(str(Library_Dict))
 def Library_add():
     for i in Library_Dict:
         user=input(f"Enter The {i}")
         Library_Dict[i]=user
-    with open("E:\Python\Library_system.txt","w")as f:
+    with open("Library_system.txt","w")as f:
         f.write(str(Library_Dict))
 
 
 def Library_Search(choice,user):
-    with open("E:\Python\Library_system.txt","r")as f:
+    with open("Library_system.txt","r")as f:
         data=f.readlines()
         for i in data:
             a=ast.literal_eval(i)
@@ -46,7 +46,7 @@ def Library_Search(choice,user):
 
 
 # def delete():
-#     with open("E:\Python\Library_system.txt","r")as f:
+#     with open("Library_system.txt","r")as f:
 #         data=f.readlines()
 #         for i in data:
 #             a=ast.literal_eval(i)
